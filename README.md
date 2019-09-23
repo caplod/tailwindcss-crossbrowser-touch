@@ -47,8 +47,7 @@ Enabling a variant on a module is just like enabling any other variant, locate t
 
 ```js
 modules: {
-    boxShadow: ['responsive', 'hover', 'focus', 'no-touch',
-    'no-touch-hover'],
+    boxShadow: ['responsive', 'hover', 'focus', 'no-touch', 'no-touch-hover'],
 },
 ```
 
