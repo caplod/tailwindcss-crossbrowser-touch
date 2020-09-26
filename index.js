@@ -15,5 +15,10 @@ module.exports = function() {
         return `.no-touch .${e(`no-touch-hover${separator}${className}`)}:hover`
       })
     })
+    addVariant('no-touch-group-hover', ({ modifySelectors, separator }) => {
+      modifySelectors(({ className }) => {
+        return `.no-touch .group .${e(`no-touch-hover${separator}${className}`)}:hover`
+      })
+    })
   }
 }

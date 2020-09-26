@@ -30,7 +30,15 @@ plugins: [
 
 ```
 
-The following variants are currently available:
+Enabling a variant on a module is just like enabling any other variant, locate the modules object and add the variants to the module you would like to enable touch capabilites for:
+
+```js
+modules: {
+    boxShadow: ['responsive', 'hover', 'focus', 'no-touch', 'no-touch-hover', 'no-touch-group-hover'],
+},
+```
+
+The following variants are then available:
 
 ```css
 /* touch  */
@@ -39,17 +47,13 @@ The following variants are currently available:
 /* no-touch  */
 .no-touch .no-touch\:shadow { ... }
 
-/* no-touch hover */
+/* no-touch-hover */
 .no-touch .no-touch-hover\:shadow:hover { ... }
+
+/* no-touch-group-hover */
+.no-touch .group .no-touch-hover\:shadow:hover { ... }
 ```
 
-Enabling a variant on a module is just like enabling any other variant, locate the modules object and add the variants to the module you would like to enable touch capabilites for:
-
-```js
-modules: {
-    boxShadow: ['responsive', 'hover', 'focus', 'no-touch', 'no-touch-hover'],
-},
-```
 
 Once the variant is enabled, using it is just like using any other variant, for example if you have a div which you would like to add a small shadow on touch enabled devices but a large shadow on non touch devices you would do it like so:
 ```html

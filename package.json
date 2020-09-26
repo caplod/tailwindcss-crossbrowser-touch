@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-crossbrowser-touch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A collection of crossbrowser touch and no-touch variants for tailwindcss",
   "main": "index.js",
   "repository": {
