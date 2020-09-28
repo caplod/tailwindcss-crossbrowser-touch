@@ -17,7 +17,7 @@ module.exports = function() {
     })
     addVariant('no-touch-group-hover', ({ modifySelectors, separator }) => {
       modifySelectors(({ className }) => {
-        return `.no-touch .group .${e(`no-touch-hover${separator}${className}`)}:hover`
+        return `.no-touch .group:hover .${e(`no-touch-hover${separator}${className}`)}`
       })
     })
   }
