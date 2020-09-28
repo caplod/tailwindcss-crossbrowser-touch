@@ -51,7 +51,7 @@ The following variants are then available:
 .no-touch .no-touch-hover\:shadow:hover { ... }
 
 /* no-touch-group-hover */
-.no-touch .group:hover .no-touch-hover\:shadow { ... }
+.no-touch .group:hover .no-touch-group-hover\:shadow { ... }
 ```
 
 
